@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import awareness from '../../images/awareness-2.jpg';
+import awareness from '../../images/awareness.jpg';
 import awareness2 from '../../images/awareness-2.jpg';
 import awareness3 from '../../images/awareness-3.png';
 
