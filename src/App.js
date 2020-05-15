@@ -4,10 +4,11 @@ import Logo from './images/logo.png'
 import Cards from './components/cards/cards'
 import Chart from './components/charts/charts'
 import Country from './components/countrypicker/country'
-import Divider from './divider'
 import { fetchData, fetchCountriesData } from './covidapi'
 import Prevention from './components/prevention/prevention'
 import datas from './continent-data/continent-country'
+import { Grid, Divider } from '@material-ui/core';
+
 class App extends React.Component {
   state = {
     data: {},
@@ -55,9 +56,14 @@ class App extends React.Component {
     const { data, country, continentData, isLoading, isError } = this.state
     return (
       <div className="app">
-        <img src={Logo} alt="logo" style={{ width: 400, padding: 30, display: 'inline-block' }} />
+        <Grid justify="center">
+          <img src={Logo} alt="logo" style={{ maxWidth: 340, padding: 20 }} />
+        </Grid>
+        <Divider />
         <Cards data={data} />
+
         <Country handleCountryChange={this.handleCountryChange} />
+        <Divider />
         <Chart data={data} country={country} continentData={continentData} isLoading={isLoading} isError={isError} />
         <Divider />
         <Prevention />

@@ -1,20 +1,21 @@
-.app{
-    text-align: center;
-    margin: 20px;
+.app {
+  text-align: center;
+  margin: 20px;
+  display: contents;
 }
 
-.app.p{
-    font-size: 40px;
+.app.p {
+  font-size: 40px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    width: 65%;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 770px) {
-    .container {
-      width: 100%;
-    }
-  }
+}
