@@ -1,6 +1,7 @@
 The project is a covid19 tracker app built on material-ui and charts with data source from John Hopkins University CSSE. This data is updated regularly hence stats shown by the app is not stale.
 
-![Alt text](screen.jpg "Title")
+![Screen](screen.png "Title")
+
 ## Available Scripts
 
 In the project directory, you can run:
